@@ -5,8 +5,9 @@ import Header from "../components/Header";
 import MobileHeader from "@/components/MobileHeader";
 
 export const metadata = {
-	title: "Storage2040",
-	description: "Reliability at its peak",
+	title: "Container Merchants",
+	description:
+		"Elevating Reliability, Redefining Excelence in Container Solutions",
 };
 
 export default function RootLayout({ children }) {
