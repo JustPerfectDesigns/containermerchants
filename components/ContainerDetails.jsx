@@ -2,30 +2,88 @@ import React from "react";
 import c1 from "../public/images/container1.webp";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { BadgeCheck, Briefcase, Construction, Home } from "lucide-react";
 
-const ContainerDetails = ({ title, description }) => {
+const ContainerDetails = () => {
 	return (
-		<div className="lg:container">
-			<div className="ml-5 mr-5 -mt-[50%] md:-mt-[15%] lg:-mt-[10%] bg-slate-50 py-12 md:py-20 lg:py-32 px-5 md:px-10 md:flex md:justify-between md:items-start md:gap-12 lg:gap-20">
-				<div className="h-[220px] lg:h-auto overflow-hidden lg:flex-1">
-					<Image
-						width={100}
-						height={100}
-						src={c1}
-						alt="container"
-						className="w-full -mt-14 md:-mt-6"
-						unoptimized
-					/>
+		<div className="mt-12 md:my-16 lg:my-32 ml-5 mr-5 md:container lg:px-40">
+			<h2 className="font-bold text-2xl md:text-[26px] lg:text-4xl md:max-w-96 lg:max-w-[500px] text-[#14213F] capitalize text-center md:mx-auto">
+				Innovation that can be contained
+			</h2>
+			<div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+				<div className="p-5 grid gap-2 border">
+					<Home className="text-orange-600" size={50} />
+					<h3 className="text-xl font-semibold text-orange-600">At Home</h3>
+					<ul>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> School
+							Buildings
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Apartments
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Hotels
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Emergency
+							Hurricane Shelters
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Museums
+						</li>
+					</ul>
 				</div>
-
-				<div className="mt-8 md:mt-0 lg:flex-1">
-					<h3 className="text-2xl lg:text-4xl lg:font-bold font-semibold text-[#14213F]">
-						{title}
-					</h3>
-					<p className="text-[#4F4F4F] mt-2 lg:text-lg">{description}</p>
-					<Button className="bg-orange-600 text-white font-semibold mt-6">
-						Purchase Now
-					</Button>
+				<div className="p-5 grid gap-2 border">
+					<Briefcase className="text-orange-600" size={50} />
+					<h3 className="text-xl font-semibold text-orange-600">Work</h3>
+					<ul>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Office
+							Buildings
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Retail Outlet
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Data Centres
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Medical
+							Centres
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Training
+							Facilities
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Transportable
+							Factories
+						</li>
+					</ul>
+				</div>
+				<div className="p-5 grid gap-2 border">
+					<Construction className="text-orange-600" size={50} />
+					<h3 className="text-xl font-semibold text-orange-600">Rebuilding</h3>
+					<ul>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Home
+							Extensions
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Sheds
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Garages
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Swimming
+							Pools
+						</li>
+						<li className="flex items-center gap-2">
+							<BadgeCheck size={16} className="text-orange-600" /> Workshops
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

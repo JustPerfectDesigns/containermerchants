@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../public/images/storage2040-bg.png";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
 	return (
@@ -44,10 +45,10 @@ const HeroSection = () => {
 						className="py-6 px-6 font-semibold text-white border border-white"
 						variant="ghost"
 					>
-						About Us
+						<Link href="/about-us">About Us</Link>
 					</Button>
 					<Button className="py-6 px-6 font-semibold bg-orange-600">
-						Shop Containers
+						<Link href="#containers">Shop Containers</Link>
 					</Button>
 				</div>
 			</div>

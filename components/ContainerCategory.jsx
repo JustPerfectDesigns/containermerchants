@@ -45,7 +45,7 @@ const ContainerCategory = () => {
 	];
 
 	return (
-		<div className="bg-slate-50">
+		<div id="containers" className="bg-slate-50">
 			<div className="mt-12 py-12 md:py-16 lg:py-32 md:container">
 				<div className="ml-5 mr-5">
 					<h2 className="font-bold text-2xl md:text-[26px] lg:text-4xl md:max-w-96 lg:max-w-[500px] text-[#14213F] capitalize">

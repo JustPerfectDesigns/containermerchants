@@ -11,7 +11,7 @@ const Gallery = ({ title, titleStyle, bgColor, data }) => {
 		500: 1,
 	};
 	return (
-		<div className={bgColor}>
+		<div id="gallery" className={bgColor}>
 			<div className="py-12 md:py-14 lg:pt-16 lg:pb-32 md:container">
 				<div className="ml-5 mr-5">
 					<h2

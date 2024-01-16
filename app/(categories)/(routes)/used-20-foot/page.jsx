@@ -15,6 +15,7 @@ import g8 from "../../../../public/images/g8.png";
 import ContainerDetails from "@/components/ContainerDetails";
 
 import bg from "../../../../public/images/bg4.png";
+import BuyContainers from "@/components/BuyContainers";
 
 const Used20Foot = () => {
 	const titleStyle = "text-center md:ml-auto md:mr-auto";
@@ -60,23 +61,10 @@ const Used20Foot = () => {
 				image={bg}
 				title="Neatly Used 20 Foot Standard Shipping Containers"
 			/>
-			<ContainerDetails
-				title="20ft Container"
-				description="Container Merchant's has a fleet of over 1.6M TEU (general purpose)
-						containers. 20ft containers are suitable for shipping, storage,
-						modular construction, retail spaces, housing, offices, restaurants
-						and cafes, workshops, art installations, and event spaces worldwide.
-						
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-						molestias esse veniam? Nostrum facilis iure facere adipisci
-						blanditiis doloremque vel libero, aut perspiciatis error esse quia
-						magni a molestias repellat cumque perferendis quibusdam iste
-						officiis aliquam deleniti animi harum accusantium? Dolores numquam
-						nostrum recusandae tempore explicabo maxime aut quo vero! Eos,
-						error. Commodi similique iusto aliquam suscipit totam quos nihil
-						incidunt quisquam cupiditate, ex ipsam illo quibusdam id debitis
-						facere?"
-			/>
+			<ContainerDetails />
+			<div className="my-12">
+				<BuyContainers title="Shop Neatly Used 20ft Containers" />
+			</div>
 			<Gallery
 				title="What Has been and can be done with 20 foot containers"
 				titleStyle={titleStyle}
