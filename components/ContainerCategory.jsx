@@ -9,39 +9,39 @@ const ContainerCategory = () => {
 		{
 			id: 1,
 			imgSrc: c1,
-			title: "20’ New Shipping Containers",
-			link: "/new-20-foot",
+			title: "20 Foot Shipping Containers",
+			link: "/20ft-Unit",
 		},
 		{
 			id: 2,
 			imgSrc: c1,
-			title: "20’ Used Shipping Containers",
-			link: "/used-20-foot",
+			title: "40 Foot Shipping Containers",
+			link: "/40ft-Unit",
 		},
-		{
-			id: 3,
-			imgSrc: c1,
-			title: "40’ New Shipping Containers",
-			link: "/new-40-foot",
-		},
-		{
-			id: 4,
-			imgSrc: c1,
-			title: "40’ Used Shipping Containers",
-			link: "/used-40-foot",
-		},
-		{
-			id: 5,
-			imgSrc: c1,
-			title: "45’ New Shipping Containers",
-			link: "/new-45-foot",
-		},
-		{
-			id: 6,
-			imgSrc: c1,
-			title: "45’ Used Shipping Containers",
-			link: "/used-45-foot",
-		},
+		// {
+		// 	id: 3,
+		// 	imgSrc: c1,
+		// 	title: "40’ New Shipping Containers",
+		// 	link: "/new-40-foot",
+		// },
+		// {
+		// 	id: 4,
+		// 	imgSrc: c1,
+		// 	title: "40’ Used Shipping Containers",
+		// 	link: "/used-40-foot",
+		// },
+		// {
+		// 	id: 5,
+		// 	imgSrc: c1,
+		// 	title: "45’ New Shipping Containers",
+		// 	link: "/new-45-foot",
+		// },
+		// {
+		// 	id: 6,
+		// 	imgSrc: c1,
+		// 	title: "45’ Used Shipping Containers",
+		// 	link: "/used-45-foot",
+		// },
 	];
 
 	return (

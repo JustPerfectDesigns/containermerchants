@@ -12,11 +12,33 @@ import s7 from "../public/images/sale7.png";
 import s8 from "../public/images/sale8.png";
 import s9 from "../public/images/sale9.png";
 
-import { ShoppingBag } from "lucide-react";
+import { client, urlFor } from "../app/lib/sanity";
+
+import { Eye, ShoppingBag } from "lucide-react";
 import { Button } from "./ui/button";
 
-const BuyContainers = ({ title }) => {
-	let data = [
+async function getData(category) {
+	const query = `*[_type == "product" && category->name == "${category}"] {
+      _id,
+      "imageUrl": images[0].asset->url,
+      price,
+      name,
+		description,
+      "slug": slug.current,
+      "category": category->{name, catText, catDesc, bigImage},
+    }`;
+
+	const data = await client.fetch(query);
+
+	return data;
+}
+
+export const dynamic = "force-dynamic";
+
+const BuyContainers = async ({ title, params }) => {
+	const data = await getData(params.category);
+
+	let imgage = [
 		{
 			id: 1,
 			imgSrc: s1,
@@ -93,34 +115,38 @@ const BuyContainers = ({ title }) => {
 					<div className="mt-8 flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3">
 						{data.map((item) => {
 							return (
-								<div key={item.id}>
+								<div key={item._id}>
 									<div className="w-full max-w-[519px] h-52 lg:h-60 overflow-hidden object-contain">
-										<Image
-											width={100}
-											height={100}
-											src={item.imgSrc}
-											alt="container"
-											className="h-full w-full object-cover"
-											unoptimized
-										/>
+										<Link href={`/product/${item.slug}`}>
+											<Image
+												width={100}
+												height={100}
+												src={item.imageUrl}
+												alt="container"
+												className="h-full w-full object-cover"
+												unoptimized
+											/>
+										</Link>
 									</div>
 									<div className="text-base py-5 px-4 bg-white">
-										<h4 className="flex-1 text-[#14213F] text-lg lg:text-xl font-semibold">
-											{item.title}
-										</h4>
+										<Link href={`/product/${item.slug}`}>
+											<h4 className="flex-1 text-[#14213F] text-lg lg:text-xl font-semibold">
+												{item.name}
+											</h4>
+										</Link>
 									</div>
 									<div className="text-base border-t border-slate-100 py-5 px-4 bg-white flex justify-between items-center">
 										<h5 className="flex-1 text-[#14213F] text-xl font-bold">
-											{item.price}
+											${item.price}
 										</h5>
 										{/* <Button className="bg-orange-600 py-[21px] lg:py-6 px-4 rounded-full text-sm font-semibold text-white flex justify-center items-center gap-2">
 											<ShoppingBag size={20} /> Shop Now
 										</Button> */}
 										<Link
-											href={item.link}
-											className="bg-orange-600 py-[12px] px-4 rounded-full text-sm font-semibold text-white flex justify-center items-center gap-2"
+											href={`/product/${item.slug}`}
+											className="bg-orange-600 py-[12px] px-4 rounded-full text-sm font-semibold text-white flex justify-center items-center gap-1"
 										>
-											<ShoppingBag size={20} /> Shop Now
+											<Eye size={20} /> Quick View
 										</Link>
 									</div>
 								</div>
