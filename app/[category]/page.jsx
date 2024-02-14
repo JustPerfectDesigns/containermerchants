@@ -83,7 +83,7 @@ export default async function CategoryPage({ params }) {
 	];
 
 	return (
-		<div>
+		<div className="xl:container">
 			<CategoryHero
 				image={urlFor(data[0]?.category.bigImage).url()}
 				title={data[0]?.category.catText}

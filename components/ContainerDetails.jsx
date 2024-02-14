@@ -6,7 +6,7 @@ import { BadgeCheck, Briefcase, Construction, Home } from "lucide-react";
 
 const ContainerDetails = () => {
 	return (
-		<div className="mt-12 md:my-16 lg:my-32 ml-5 mr-5 md:container lg:px-40">
+		<div className="mt-32 md:my-16 lg:my-32 ml-5 mr-5 md:container lg:px-40">
 			<h2 className="font-bold text-2xl md:text-[26px] lg:text-4xl md:max-w-96 lg:max-w-[500px] text-[#14213F] capitalize text-center md:mx-auto">
 				Innovation that can be contained
 			</h2>

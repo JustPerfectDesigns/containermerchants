@@ -25,14 +25,14 @@ const HeroSection = () => {
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
 				width: "100%",
-				height: "calc(100vh - 4rem)",
+				height: "550px",
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center",
 			}}
 			className="homeBg relative"
 		>
-			<div className="ml-5 mr-5 md:container z-10 lg:mt-12">
+			<div className="ml-5 mr-5 md:container z-10 lg:mt-24 mt-24">
 				<h1 className="text-white text-4xl md:text-5xl lg:text-7xl lg:w-4/5 font-bold -mt-32">
 					Your Premier Destination for Superior Shipping and Construction
 					Containers

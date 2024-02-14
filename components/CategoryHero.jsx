@@ -6,7 +6,7 @@ import Image from "next/image";
 const CategoryHero = ({ image, title }) => {
 	return (
 		<div className="relative">
-			<div className="relative h-[70vh]">
+			<div className="relative h-[350px] md:h-[500px] w-full">
 				<Image
 					src={image}
 					alt="Category Image"
@@ -15,8 +15,8 @@ const CategoryHero = ({ image, title }) => {
 					className="object-center z-[-1]"
 				/>
 			</div>
-			<div className="ml-5 mr-5 md:container absolute top-0 left-0 z-30 mt-28 md:flex md:flex-col md:items-center md:justify-center">
-				<h1 className="text-white text-4xl md:text-5xl lg:text-7xl md:w-4/5 md:flex md:flex-col md:items-center md:justify-center font-bold leading-10 md:text-center">
+			<div className="ml-5 mr-5 md:container z-30 md:flex md:flex-col md:items-center md:justify-center">
+				<h1 className="text-white text-4xl -mt-[18rem] md:-mt-[30rem] md:text-5xl lg:text-7xl md:w-4/5 md:flex md:flex-col md:items-center md:justify-center font-bold leading-10 md:text-center">
 					{title}
 				</h1>
 				<div className="mt-12 flex items-center">

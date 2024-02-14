@@ -94,7 +94,7 @@ export default async function ProductPge({ params }) {
 							/>
 							{/* <Button>Add to Cart</Button>
 							<Button>Checkout Now</Button> */}
-							<CheckoutNow
+							{/* <CheckoutNow
 								currency="USD"
 								description={data.description}
 								image={data.images[0]}
@@ -102,7 +102,7 @@ export default async function ProductPge({ params }) {
 								price={data.price}
 								key={data._id}
 								price_id={data.price_id}
-							/>
+							/> */}
 						</div>
 
 						<p className="mt-12 text-base text-gray-500 tracking-wide">
