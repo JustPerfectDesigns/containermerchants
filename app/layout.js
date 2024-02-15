@@ -7,6 +7,7 @@ import CartProvider from "@/components/Providers";
 import Navbar from "@/components/Navbar";
 import ShoppingCartModal from "@/components/ShoppingCartModal";
 import { ToastContainer } from "react-toastify";
+import Footer from "@/components/Footer";
 
 export const metadata = {
 	title: "Container Merchants",
@@ -19,20 +20,18 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={`${merriweather.variable} ${montserrat.variable}`}>
 				<CartProvider>
-					{/* <div className="hidden lg:flex py-6 bg-white">
-						<Header />
-					</div> */}
 					<Navbar />
-					{/* <div className="lg:hidden py-4 bg-white">
-						<MobileHeader />
-					</div> */}
 					<div className="lg:hidden py-4 bg-white">
 						<MobileHeader />
 						<ShoppingCartModal />
 					</div>
 					<div className="mb-20 lg:mb-28">{children}</div>
-					<div className="bg-[#14213F] py-28 md:mt-60 text-white text-center">
+					{/* <div className="bg-[#14213F] py-28 md:mt-60 text-white text-center">
 						Main Footer
+					</div> */}
+
+					<div className="mt-44 md:mt-48 lg:mt-72">
+						<Footer />
 					</div>
 
 					<ToastContainer

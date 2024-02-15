@@ -16,20 +16,26 @@ const Testimonials = ({ style }) => {
 		{
 			quote:
 				"We were looking to build a storage facility from 20 x 20 ft containers and were having a hard time finding a supplier that had a good selection of containers with a reasonable discount for a bulk order. Luckily, we got in touch with Viva Containers, which offered us a much better price and managed to deliver all containers within 3 days. So happy.",
-			name: "Jerry Lewis",
+			name: "Harry Lewis",
 			date: "May 16",
 		},
 		{
 			quote:
-				"We were looking to build a storage facility from 20 x 20 ft containers and were having a hard time finding a supplier that had a good selection of containers with a reasonable discount for a bulk order. Luckily, we got in touch with Viva Containers, which offered us a much better price and managed to deliver all containers within 3 days. So happy.",
+				"I couldn't be happier with my purchase from Container Merchant! The container I bought in September 15th, was in excellent condition and delivered promptly.",
 			name: "Vicky Jones",
-			date: "June 3",
+			date: "September 15",
 		},
 		{
 			quote:
-				"We were looking to build a storage facility from 20 x 20 ft containers and were having a hard time finding a supplier that had a good selection of containers with a reasonable discount for a bulk order. Luckily, we got in touch with Viva Containers, which offered us a much better price and managed to deliver all containers within 3 days. So happy.",
-			name: "Jerry Lewis",
-			date: "April 22",
+				"Container Merchant made the process of buying a shipping container hassle-free. From selecting the right size to delivery, everything was smooth. I purchased a container in November, and it has been a valuable addition to my property.",
+			name: "Samantha Miller",
+			date: "November 10",
+		},
+		{
+			quote:
+				"I highly recommend Container Merchant for anyone in need of a shipping container. I purchased two 40ft containers recently, and it was exactly what I needed for my business. Thank you for your professionalism and efficiency.",
+			name: "Jerry Adams",
+			date: "February 7",
 		},
 	];
 	return (
