@@ -45,7 +45,7 @@ export async function POST(req, res) {
 		// Define email options
 		const mailOptions = {
 			from: "gabriel.jpdesigns@gmail.com",
-			to: "ainagabrielcompany@gmail.com",
+			to: "sales@containermerchants.com",
 			subject: subject || "New Order Received",
 			html: message,
 		};

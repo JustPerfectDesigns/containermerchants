@@ -19,16 +19,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={`${merriweather.variable} ${montserrat.variable}`}>
-				<CartProvider>
+				{/* <CartProvider>
 					<Navbar />
 					<div className="lg:hidden py-4 bg-white">
 						<MobileHeader />
 						<ShoppingCartModal />
 					</div>
 					<div className="mb-20 lg:mb-28">{children}</div>
-					{/* <div className="bg-[#14213F] py-28 md:mt-60 text-white text-center">
-						Main Footer
-					</div> */}
 
 					<div className="mt-44 md:mt-48 lg:mt-72">
 						<Footer />
@@ -46,7 +43,11 @@ export default function RootLayout({ children }) {
 						pauseOnHover
 						theme="dark"
 					/>
-				</CartProvider>
+				</CartProvider> */}
+
+				<h1 className="flex justify-center items-center h-screen text-lg">
+					Website Not available
+				</h1>
 			</body>
 		</html>
 	);
